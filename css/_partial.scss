@@ -1,0 +1,19 @@
+/*Variabler*/
+$primary-color: #E4D4C9;
+$secondary-color: #DF262E; 
+$font-text: 'Times New Roman', Times, serif;
+$font-overskrift: "Libre Baskerville", serif;
+$text-color: #ffff;
+
+/*Mixins*/
+@mixin btn($bg-color: $secondary-color, $btn-padding: 0.6em 1em){
+    background-color: $bg-color;
+    padding: $btn-padding;
+    border-radius: 8px;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    font-size: 18px;
+    font-family: $font-overskrift;
+    box-shadow: 0 4px 8px rgb(0, 0, 0, 0.5);
+}

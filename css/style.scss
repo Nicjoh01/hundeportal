@@ -1,0 +1,105 @@
+@use 'partial';
+
+/*Generel styling*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img{
+    max-width: 100%;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(rgba(85, 85, 85, 0.6), rgba(85, 85, 85, 0.6)), url(../img/hund.jpeg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+
+        .logo{
+            width: 20%;
+            height: auto;
+        }
+
+        .navbar{
+            a{
+                font-size: 18px;
+                color: partial.$text-color;
+                font-family: partial.$font-overskrift;
+                font-weight: 600;
+                text-decoration: none;
+                margin-left: 40px;
+
+                &:hover{
+                    color: partial.$secondary-color;
+                }
+
+            }
+
+            .quiz{
+                background-color: #fff;
+                padding: 10px;
+                width: 20%;
+                border-radius: 8px;
+                box-shadow: 0 4px 8px rgb(0, 0, 0, 0.5);
+
+                &:hover{
+                    background-color: partial.$primary-color;
+                    transition: 0.4s ease-in-out;
+                }
+            }
+
+            
+        }
+
+}
+
+.hero{
+    .banner-tekst{
+        position: absolute;
+        left: 3.5%;
+        top: 25%;
+        
+    }
+
+    h1{
+        font-size: 6.2vw;
+        font-family: partial.$font-overskrift;
+        margin-bottom: 20px;
+        color: partial.$text-color;
+    }
+
+    p{
+        font-size: 2.8vw;
+        margin-bottom: 35px;
+        color: partial.$text-color;
+        font-family: partial.$font-text
+    }
+
+    a{
+        @include partial.btn; //kalder på vores mixin
+        position: absolute;
+
+            &:hover{
+                background-color: #ffff;
+                color: partial.$secondary-color;
+                transition: 0.4s ease-in-out;
+            }
+    }
+}
+
