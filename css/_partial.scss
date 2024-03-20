@@ -1,6 +1,7 @@
 /*Variabler*/
 $primary-color: #E4D4C9;
 $secondary-color: #DF262E; 
+$third-color: #724F37;
 $font-text: 'Times New Roman', Times, serif;
 $font-overskrift: "Libre Baskerville", serif;
 $text-color: #ffff;
@@ -16,4 +17,11 @@ $text-color: #ffff;
     font-size: 18px;
     font-family: $font-overskrift;
     box-shadow: 0 4px 8px rgb(0, 0, 0, 0.5);
+}
+
+@mixin service-box($width: 22vw){
+    border-radius: 10px;
+    width: $width;
+    padding: 2em;
+    margin: 2em 1em;
 }
