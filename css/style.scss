@@ -92,8 +92,6 @@ img{
         }
     }
 
-   
-
 }
 
 .hero{
@@ -133,8 +131,39 @@ img{
                 }
         }
     }
-
     
+}
+
+.golden-hero{
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(rgba(85, 85, 85, 0.6), rgba(85, 85, 85, 0.6)), url(../img/golden-r.webp) no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    .banner-tekst{
+        position: absolute;
+        left: 23%;
+        top: 30%;
+
+        
+        h1{
+            font-size: 6.2vw;
+            text-align: center;
+            font-family: partial.$font-overskrift;
+            margin-bottom: 20px;
+            color: partial.$text-color;
+        }
+    
+        p{
+            font-size: 2.8vw;
+            text-align: center;
+            margin-bottom: 35px;
+            color: partial.$text-color;
+            font-family: partial.$font-text
+        }
+    }
+
 }
 
 /*Main*/

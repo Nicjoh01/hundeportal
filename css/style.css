@@ -118,6 +118,33 @@ img {
   transition: 0.4s ease-in-out;
 }
 
+.golden-hero {
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(rgba(85, 85, 85, 0.6), rgba(85, 85, 85, 0.6)), url(../img/golden-r.webp) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.golden-hero .banner-tekst {
+  position: absolute;
+  left: 23%;
+  top: 30%;
+}
+.golden-hero .banner-tekst h1 {
+  font-size: 6.2vw;
+  text-align: center;
+  font-family: "Libre Baskerville", serif;
+  margin-bottom: 20px;
+  color: white;
+}
+.golden-hero .banner-tekst p {
+  font-size: 2.8vw;
+  text-align: center;
+  margin-bottom: 35px;
+  color: white;
+  font-family: "Times New Roman", Times, serif;
+}
+
 /*Main*/
 main {
   grid-column: 1/6;
