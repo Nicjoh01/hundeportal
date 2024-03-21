@@ -26,3 +26,8 @@ $text-color: #ffff;
     margin: 1em 1em;
    
 }
+
+@mixin secondary-box($width: 40vw){
+    width: $width;
+    margin: 1em 1em;
+}

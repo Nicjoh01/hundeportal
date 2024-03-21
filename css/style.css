@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*Variabler*/
 /*Mixins*/
 /*Generel styling*/
@@ -118,26 +119,26 @@ img {
   transition: 0.4s ease-in-out;
 }
 
-.golden-hero {
+.au-hero {
   height: 100vh;
   width: 100%;
-  background: linear-gradient(rgba(85, 85, 85, 0.6), rgba(85, 85, 85, 0.6)), url(../img/golden-r.webp) no-repeat;
+  background: linear-gradient(rgba(85, 85, 85, 0.6), rgba(85, 85, 85, 0.6)), url(../img/australsk.webp) no-repeat;
   background-size: cover;
   background-position: center;
 }
-.golden-hero .banner-tekst {
+.au-hero .banner-tekst {
   position: absolute;
-  left: 23%;
-  top: 30%;
+  left: 14.5%;
+  top: 35%;
 }
-.golden-hero .banner-tekst h1 {
+.au-hero .banner-tekst h1 {
   font-size: 6.2vw;
   text-align: center;
   font-family: "Libre Baskerville", serif;
   margin-bottom: 20px;
   color: white;
 }
-.golden-hero .banner-tekst p {
+.au-hero .banner-tekst p {
   font-size: 2.8vw;
   text-align: center;
   margin-bottom: 35px;
@@ -146,6 +147,22 @@ img {
 }
 
 /*Main*/
+.golden-main {
+  grid-column: 1/6;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  border-top: solid 3px #DF262E;
+  background-color: #fff;
+}
+.golden-main h2 {
+  grid-column: 1/7;
+  text-align: center;
+  font-size: 40px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  font-family: "Libre Baskerville", serif;
+}
+
 main {
   grid-column: 1/6;
   display: grid;
@@ -168,6 +185,18 @@ main .wrapper {
   margin-left: 60px;
   margin-right: 60px;
   height: 82vh;
+}
+main section {
+  position: absolute;
+  left: 0%;
+  top: 185%;
+  margin-left: 110px;
+  margin-right: 110px;
+  margin-bottom: 40px;
+}
+main section .aussie {
+  text-align: center;
+  font-size: 18px;
 }
 
 /*Service bokse*/
@@ -259,6 +288,53 @@ main .wrapper {
   background-color: #fff;
   color: #DF262E;
   transition: 0.4s ease-in-out;
+}
+
+.boks-container {
+  display: flex;
+  justify-content: space-around;
+  margin-left: 30px;
+  grid-column: 1/7;
+  margin-left: 60px;
+  margin-right: 60px;
+  height: 80vh;
+}
+.boks-container .venstre {
+  width: 40vw;
+  margin: 1em 1em;
+  margin-top: -60px;
+}
+.boks-container .venstre img {
+  width: 90%;
+}
+.boks-container .center, .boks-container .højre {
+  border-radius: 10px;
+  width: 30vw;
+  padding: 2em;
+  margin: 1em 1em;
+  margin-top: 10px;
+}
+.boks-container .center .små img, .boks-container .højre .små img {
+  width: 20%;
+  margin: 0 auto;
+  display: block;
+  box-shadow: none;
+}
+.boks-container .center img, .boks-container .højre img {
+  width: 100%;
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(223, 38, 46, 0.5);
+}
+.boks-container .center h3, .boks-container .højre h3 {
+  margin-bottom: 10px;
+  text-align: center;
+}
+.boks-container .center p, .boks-container .højre p {
+  margin-bottom: 2em;
+  text-align: center;
 }
 
 /*Tekst og billede sektion*/
