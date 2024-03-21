@@ -11,7 +11,7 @@ $text-color: #ffff;
     background-color: $bg-color;
     padding: $btn-padding;
     border-radius: 8px;
-    color: #fff;
+    color: $text-color;
     text-decoration: none;
     text-align: center;
     font-size: 18px;
@@ -19,9 +19,10 @@ $text-color: #ffff;
     box-shadow: 0 4px 8px rgb(0, 0, 0, 0.5);
 }
 
-@mixin service-box($width: 22vw){
+@mixin service-box($width: 30vw){
     border-radius: 10px;
     width: $width;
     padding: 2em;
-    margin: 2em 1em;
+    margin: 1em 1em;
+   
 }

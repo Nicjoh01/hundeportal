@@ -62,6 +62,40 @@ img{
 
 }
 
+.racer-hero{
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(rgba(85, 85, 85, 0.6), rgba(85, 85, 85, 0.6)), url(../img/racer\ .png) no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    .banner-tekst{
+        position: absolute;
+        left: 12.5%;
+        top: 25%;
+
+        
+        h1{
+            font-size: 6.2vw;
+            text-align: center;
+            font-family: partial.$font-overskrift;
+            margin-bottom: 20px;
+            color: partial.$text-color;
+        }
+    
+        p{
+            font-size: 2.8vw;
+            text-align: center;
+            margin-bottom: 35px;
+            color: partial.$text-color;
+            font-family: partial.$font-text
+        }
+    }
+
+   
+
+}
+
 .hero{
     height: 100vh;
     width: 100%;
@@ -74,32 +108,33 @@ img{
         left: 3.5%;
         top: 25%;
         
+        h1{
+            font-size: 6.2vw;
+            font-family: partial.$font-overskrift;
+            margin-bottom: 20px;
+            color: partial.$text-color;
+        }
+    
+        p{
+            font-size: 2.8vw;
+            margin-bottom: 35px;
+            color: partial.$text-color;
+            font-family: partial.$font-text
+        }
+    
+        a{
+            @include partial.btn;
+            position: absolute;
+    
+                &:hover{
+                    background-color: #ffff;
+                    color: partial.$secondary-color;
+                    transition: 0.4s ease-in-out;
+                }
+        }
     }
 
-    h1{
-        font-size: 6.2vw;
-        font-family: partial.$font-overskrift;
-        margin-bottom: 20px;
-        color: partial.$text-color;
-    }
-
-    p{
-        font-size: 2.8vw;
-        margin-bottom: 35px;
-        color: partial.$text-color;
-        font-family: partial.$font-text
-    }
-
-    a{
-        @include partial.btn;
-        position: absolute;
-
-            &:hover{
-                background-color: #ffff;
-                color: partial.$secondary-color;
-                transition: 0.4s ease-in-out;
-            }
-    }
+    
 }
 
 /*Main*/
@@ -109,6 +144,7 @@ main{
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     background-color: partial.$primary-color;
+    border-top: solid 3px partial.$secondary-color;
     
 
     h2{
@@ -125,6 +161,8 @@ main{
         justify-content: space-around;
         margin-left: 60px;
         margin-right: 60px;
+        height: 85vh;
+        
     }
 }
 
@@ -163,3 +201,113 @@ main{
     }
 
 }
+
+.container{
+    display: flex;
+    justify-content: space-around;
+    margin-left: 30px;
+    grid-column: 1/7;
+    margin-left: 60px;
+    margin-right: 60px;
+    height: 80vh;
+
+    .box{
+        @include partial.service-box;
+        background-color: #fff;
+
+        img{
+            width: 100%;
+            margin: 0 auto;
+            display: block;
+            margin-bottom: 20px;
+        }
+
+        h3{
+            margin-bottom: 10px;
+            text-align: center;
+        }
+    
+        p{
+            margin-bottom: 2em;
+            text-align: justify
+        }
+
+        a{
+            @include partial.btn;
+            display: block;
+            margin-bottom: 3em;
+    
+                &:hover{
+                    background-color: #fff;
+                    color: partial.$secondary-color;
+                    transition: 0.4s ease-in-out;
+                }
+        }
+    }
+}
+
+
+
+/*Tekst og billede sektion*/
+
+.txt-img-section{
+    grid-column: 1/7;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    background-color: #fff;
+    border-top: solid 3px partial.$secondary-color;
+    height: 95vh;
+}
+
+.tekst{
+    grid-column: 1/5;
+    background-color: #ffff;
+    padding: 2em 4em 4em 4em;
+
+        h2{
+            text-align: left;
+            margin-bottom: 1em;
+        }
+
+        p{
+            margin-bottom: 2em;
+            font-size: 18px;
+        }
+
+        .p1{
+            margin-bottom: 3em;
+        }
+}
+
+.knap{
+    @include partial.btn($bg-color: transparent);
+    border: 2px solid partial.$secondary-color;
+    color: partial.$secondary-color;
+    
+
+        &:hover{
+            background-color: partial.$secondary-color;
+            color: partial.$text-color;
+            transition: 0.4s ease-in-out;
+        }
+}
+
+.billede{
+    grid-column: 5/8;
+    background-image: url(../img/hunde3.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/*Footer*/
+
+ footer{
+    height: 50vh;
+    width: 100%;
+    background: linear-gradient(rgba(85, 85, 85, 0.6), rgba(85, 85, 85, 0.6)), url(../img/footer.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-top: solid 3px partial.$secondary-color;
+
+ }
