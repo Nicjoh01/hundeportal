@@ -130,7 +130,8 @@ main h2 {
   grid-column: 1/7;
   text-align: center;
   font-size: 40px;
-  margin-top: 20px;
+  margin-top: 30px;
+  margin-bottom: 20px;
   font-family: "Libre Baskerville", serif;
 }
 main .wrapper {
@@ -139,7 +140,7 @@ main .wrapper {
   justify-content: space-around;
   margin-left: 60px;
   margin-right: 60px;
-  height: 85vh;
+  height: 82vh;
 }
 
 /*Service bokse*/
@@ -154,6 +155,7 @@ main .wrapper {
   margin: 0 auto;
   display: block;
   margin-bottom: 20px;
+  margin-top: -20px;
   border-radius: 80%;
 }
 .boks1 h3, .boks2 h3, .boks3 h3 {
@@ -197,6 +199,7 @@ main .wrapper {
   padding: 2em;
   margin: 1em 1em;
   background-color: #fff;
+  margin-bottom: 40px;
 }
 .container .box img {
   width: 100%;
