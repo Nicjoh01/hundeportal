@@ -8,6 +8,10 @@
   box-sizing: border-box;
 }
 
+body {
+  width: 100vw;
+}
+
 img {
   max-width: 100%;
 }
@@ -23,31 +27,14 @@ img {
   align-items: center;
   z-index: 100;
 }
-.header .logo {
-  width: 20%;
-  height: auto;
+
+nav img {
+  width: 60%;
 }
-.header .navbar a {
-  font-size: 18px;
-  color: white;
-  font-family: "Libre Baskerville", serif;
-  font-weight: 600;
-  text-decoration: none;
-  margin-left: 40px;
-}
-.header .navbar a:hover {
-  color: #DF262E;
-}
-.header .navbar .quiz {
-  background-color: #fff;
-  padding: 10px;
-  width: 20%;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-}
-.header .navbar .quiz:hover {
-  background-color: #E4D4C9;
-  transition: 0.4s ease-in-out;
+
+.mobil .bars {
+  display: none;
+  cursor: pointer;
 }
 
 .racer-hero {
@@ -75,6 +62,29 @@ img {
   margin-bottom: 35px;
   color: white;
   font-family: "Times New Roman", Times, serif;
+}
+
+.navbar a {
+  font-size: 18px;
+  color: white;
+  font-family: "Libre Baskerville", serif;
+  font-weight: 600;
+  text-decoration: none;
+  margin-left: 40px;
+}
+.navbar a:hover {
+  color: #DF262E;
+}
+.navbar .quiz {
+  background-color: #fff;
+  padding: 10px;
+  width: 20%;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+.navbar .quiz:hover {
+  background-color: #E4D4C9;
+  transition: 0.4s ease-in-out;
 }
 
 .hero {
@@ -147,22 +157,6 @@ img {
 }
 
 /*Main*/
-.golden-main {
-  grid-column: 1/6;
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  border-top: solid 3px #DF262E;
-  background-color: #fff;
-}
-.golden-main h2 {
-  grid-column: 1/7;
-  text-align: center;
-  font-size: 40px;
-  margin-top: 30px;
-  margin-bottom: 20px;
-  font-family: "Libre Baskerville", serif;
-}
-
 main {
   grid-column: 1/6;
   display: grid;
@@ -186,17 +180,59 @@ main .wrapper {
   margin-right: 60px;
   height: 82vh;
 }
-main section {
-  position: absolute;
-  left: 0%;
-  top: 185%;
-  margin-left: 110px;
-  margin-right: 110px;
-  margin-bottom: 40px;
+
+/*Tekst og billede sektion*/
+.tekst {
+  grid-column: 1/5;
+  background-color: #DF262E;
+  padding: 2em 4em 4em 4em;
 }
-main section .aussie {
+.tekst p, .tekst h2 {
+  color: #000;
+}
+.tekst h2 {
+  text-align: center;
+}
+.tekst p:nth-of-type(4) {
+  margin-bottom: 6.5em;
+}
+.tekst ul {
+  margin-bottom: 20px;
+  line-height: 1.5;
+  font-size: 18px;
+}
+.tekst ul img {
+  width: 10%;
+}
+.tekst ul strong {
+  color: #DF262E;
+}
+
+.secondary-btn {
+  background-color: transparent;
+  padding: 0.6em 1em;
+  border-radius: 8px;
+  color: white;
+  text-decoration: none;
   text-align: center;
   font-size: 18px;
+  font-family: "Libre Baskerville", serif;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  border: 2px solid #fff;
+}
+.secondary-btn:hover {
+  background-color: #fff;
+  color: #DF262E;
+  transition: 0.4s ease-in-out;
+}
+
+.billede1 {
+  grid-column: 5/8;
+  background-image: url(../img/a-hyrdehund.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 98%;
 }
 
 /*Service bokse*/
@@ -290,53 +326,6 @@ main section .aussie {
   transition: 0.4s ease-in-out;
 }
 
-.boks-container {
-  display: flex;
-  justify-content: space-around;
-  margin-left: 30px;
-  grid-column: 1/7;
-  margin-left: 60px;
-  margin-right: 60px;
-  height: 80vh;
-}
-.boks-container .venstre {
-  width: 40vw;
-  margin: 1em 1em;
-  margin-top: -60px;
-}
-.boks-container .venstre img {
-  width: 90%;
-}
-.boks-container .center, .boks-container .højre {
-  border-radius: 10px;
-  width: 30vw;
-  padding: 2em;
-  margin: 1em 1em;
-  margin-top: 10px;
-}
-.boks-container .center .små img, .boks-container .højre .små img {
-  width: 20%;
-  margin: 0 auto;
-  display: block;
-  box-shadow: none;
-}
-.boks-container .center img, .boks-container .højre img {
-  width: 100%;
-  margin: 0 auto;
-  display: block;
-  margin-bottom: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(223, 38, 46, 0.5);
-}
-.boks-container .center h3, .boks-container .højre h3 {
-  margin-bottom: 10px;
-  text-align: center;
-}
-.boks-container .center p, .boks-container .højre p {
-  margin-bottom: 2em;
-  text-align: center;
-}
-
 /*Tekst og billede sektion*/
 .txt-img-section {
   grid-column: 1/7;
@@ -344,7 +333,15 @@ main section .aussie {
   grid-template-columns: repeat(7, 1fr);
   background-color: #fff;
   border-top: solid 3px #DF262E;
-  height: 95vh;
+  height: auto;
+}
+.txt-img-section img {
+  display: none;
+}
+
+.størrelse img {
+  width: 100vw;
+  height: auto;
 }
 
 .tekst {
@@ -362,6 +359,9 @@ main section .aussie {
 }
 .tekst .p1 {
   margin-bottom: 3em;
+}
+.tekst .ernæring {
+  margin-top: 30px;
 }
 
 .knap {
@@ -391,6 +391,31 @@ main section .aussie {
   background-position: center;
 }
 
+.billede2 {
+  grid-column: 5/8;
+  background-image: url(../img/ernæring.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 90%;
+}
+
+.billede3 {
+  grid-column: 5/8;
+  background-image: url(../img/træning.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.billede4 {
+  grid-column: 5/8;
+  background-image: url(../img/pleje.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
 /*Footer*/
 footer {
   height: 50vh;
@@ -399,4 +424,75 @@ footer {
   background-size: cover;
   background-position: center;
   border-top: solid 3px #DF262E;
+}
+
+/***---Mobil---****/
+@media screen and (max-width: 900px) {
+  .header {
+    color: white;
+  }
+  .header .bars {
+    display: flex;
+    float: right;
+    margin-top: 9vh;
+    margin-left: 5vw;
+  }
+  nav img {
+    width: 50%;
+  }
+  .navbar {
+    display: none;
+    height: auto;
+    border-top: 4px solid #E4D4C9;
+  }
+  .navbar a {
+    display: flex;
+    flex-direction: column;
+  }
+  .hero .banner-tekst {
+    left: 5%;
+    top: 30%;
+  }
+  .hero .banner-tekst h1 {
+    font-size: 8vw;
+  }
+  .hero .banner-tekst p {
+    font-size: 5vw;
+  }
+  main .wrapper {
+    flex-direction: column;
+    height: auto;
+  }
+  .boks1, .boks2, .boks3 {
+    border-radius: 10px;
+    width: 90%;
+    padding: 2em;
+    margin: 1em 1em;
+  }
+  .boks1 img, .boks2 img, .boks3 img {
+    width: 70%;
+  }
+  .txt-img-section {
+    display: flex;
+    flex-direction: column;
+  }
+  .txt-img-section img {
+    display: block;
+    margin-bottom: 45px;
+    margin-top: -90px;
+  }
+  .container {
+    flex-direction: column;
+    height: auto;
+  }
+  .container .box {
+    border-radius: 10px;
+    width: 90%;
+    padding: 2em;
+    margin: 1em 1em;
+    height: auto;
+  }
+  .container .box img {
+    width: 100%;
+  }
 }/*# sourceMappingURL=style.css.map */

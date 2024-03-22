@@ -14,17 +14,21 @@
 </head>
 <body>
     <!--Navigation-->
- <header class="header">
-    <a href="index.html" class="logo"><img src="img/logo-hvid.png" alt=""></a>
-
-    <nav class="navbar">
-        <a href="racer.html">Racer</a>
-        <a href="hundetræning.html">Hundetræning</a>
-        <a href="#">Om os</a>
-        <a href="#">Kontakt</a>
-        <a href="#" class="quiz"><span style="color: #DF262E">Race-Quiz</span></a>
-    </nav>
-</header>
+    <header class="header">
+        <!--Burger menu-->
+       <nav class="mobil">
+       <a href="index.html"><img src="img/logo-hvid.png" alt=""></a>
+       <i class="navToggle bars fa-solid fa-bars fa-2xl"></i>
+       </nav>
+   <!--Desktop navigation-->
+       <nav class="navbar">
+           <a href="racer.html">Racer</a>
+           <a href="hundetræning.html">Hundetræning</a>
+           <a href="#">Om os</a>
+           <a href="#">Kontakt</a>
+           <a href="#" class="quiz"><span style="color: #DF262E">Race-Quiz</span></a>
+       </nav>
+   </header>
 
 <!--Banner med tekst-->
 <header class="au-hero">
@@ -35,47 +39,89 @@
 </header>
 
 <!--Hovedindhold-->
-<main class="golden-main">
-    <h2>Den Australske Hyrdehund</h2>
+<main>
+   <!--Tekst og billede sektion-->
+   <section class="txt-img-section">
+    <div class="tekst">
+        <h2>Den Australske Hyrdehund</h2>
 
-    <div class="boks-container">
-        <div class="venstre">
-            <img src="img/a-hyrdehund.png" alt="Australsk hyrdehund animeret">
-        </div>
-        <div class="center">
-            <img src="img/temp.png" alt="Gravhund">
-                <div class="små">
-                    <img src="img/hundekrop.png" alt="hundekrop">
-                    <h3>Race Gruppe</h3>
-                    <p>Sporting Hund</p>
-                    <img src="img/vægt.png" alt="en gammeldags vægt">
-                    <h3>Vægt</h3>
-                    <p>24 til 36 kilogram</p>
-                </div>
-        </div>
+      <ul>
+        <li><strong>Temperament:</strong> Intelligente, energiske og hengivne.</li>
+        <li><strong>Popularitet:</strong> De er en populær race, især i landlige områder og blandt aktive familier og hundeentusiaster.</li>
+        <li><strong>Højde:</strong> Typisk mellem 46-58 cm for hanner og 43-53 cm for tæver.</li>
+        <li><strong>Vægt:</strong> Vejer normalt mellem 16-32 kg, afhængigt af køn og størrelse.</li>
+        <li><strong>Levetid:</strong> Den bliver omkring 10 til 12 år.</li>
+      </ul>
+        
+        <p>Den australske hyrdehund er en alsidig og intelligent arbejdshund med en fascinerende historie. Oprindeligt avlet til at hjælpe australske hyrder med at styre kvæg og fårebesætninger i det barske australske landskab, har denne race bevist sit værd som en alsidig arbejdshund og en elsket følgesvend.</p>  
 
-        <div class="højre">
-            <img src="img/populær.png" alt="Schaeferhund">
-                <div class="små">
-                    <br><br><br>
-                    <img src="img/målebånd.png" alt="målebånd">
-                    <h3>Højde</h3>
-                    <p>53 af 60 cm ved skulderen</p>
-                    <br>
-                    <img src="img/hjerte.png" alt="hjærte med puls">
-                    <h3>Levetid</h3>
-                    <p>10 til 12 år</p>
-                </div>
-        </div>
+        <p>Med et venligt og hengivent temperament er den australske hyrdehund kendt for sin troskab og stærke bånd til sin familie. De er intelligente og lydige, hvilket gør dem lette at træne til en bred vifte af opgaver, lige fra hyrdning til lydighed og agility.</p>
+
+        <p>Uanset om det er som en trofast arbejdskammerat på gården, en aktiv partner i sport og konkurrencer, eller simpelthen som en elsket medlem af familien, fortsætter den australske hyrdehund med at imponere og berige livene for dem, der har fornøjelsen af at dele deres verden med denne fantastiske race.</p>
+
+        <img src="img/a-hyrdehund.png" alt="">
+
     </div>
-<section>
-    <p class="aussie">Den australske hyrdehund, også kendt som "Aussie", er en energisk og intelligent race, der stammer fra Australien. Disse hunde er kendt for deres arbejdsomhed og alsidighed, og de trives godt med fysisk og mental stimulation. Med deres naturlige instinkt til at arbejde med kvæg og deres lydighed er Aussie'en ikke kun en fremragende arbejdshund, men også en fantastisk følgesvend og familiehund. Deres smukke pels og livlige personlighed gør dem til en populær race over hele verden.</p>
+    <div class="billede1">
+        <!--Tom div til billede som indsættes i scss-->
+    </div>
+</section>
+
+<section class="txt-img-section">
+    <div class="tekst">
+        <h2><span style="color: #DF262E">Ernæring</span></h2>
+
+      <p>En afbalanceret kost er afgørende for den australske hyrdehunds sundhed og ydeevne. Protein af høj kvalitet, såsom kød eller fisk, er vigtigt for muskelopbygning og -vedligeholdelse, mens sundt fedt fra kilder som laks eller kokosolie understøtter en blank pels og sund hud. Komplekse kulhydrater som søde kartofler og fuldkorn giver langvarig energi, og friske grøntsager og frugter tilføjer essentielle vitaminer, mineraler og antioxidanter til kosten. Det er vigtigt at undgå fødevarer med høje mængder fyldstoffer som majs, soja eller hvede samt tilsætningsstoffer og farvestoffer for at bevare optimal sundhed.</p>
+        
+        <p>Sørg for at tilpasse portionerne efter hundens individuelle behov og aktivitetsniveau, og sørg altid for, at vand er tilgængeligt hele tiden for at sikre hydrering. Hyppige måltider i små portioner kan hjælpe med at undgå fordøjelsesproblemer, og det er en god idé at konsultere dyrlægen for at skræddersy en kostplan, der passer til din hunds behov. Overvåg hundens vægt nøje og juster kost og portionsstørrelser efter behov. Foder med naturlige ingredienser og minimalt forarbejdede fødevarer er at foretrække, og balance mellem proteiner, fedtstoffer og kulhydrater er nøglen til en sund kost. Med den rette ernæring kan den australske hyrdehund nyde et aktivt og sundt liv i mange år.</p>  
+
+        <img class="ernæring" src="img/ernæring.png" alt="">
+        
+    </div>
+    <div class="billede2">
+        <!--Tom div til billede som indsættes i scss-->
+    </div>
+</section>
+    
+<section class="txt-img-section">
+    <div class="tekst">
+        <h2><span style="color: #DF262E">Træning</span></h2>
+        
+        <p>Træning af den australske hyrdehund er essentiel for at kanalisere dens intelligens og energi på en positiv måde. Disse hunde er kendt for deres høje intelligens og arbejdsomhed, hvilket gør dem til fremragende kandidater til en række opgaver og aktiviteter. Start træningen tidligt for at etablere gode adfærds- og lydighedsmønstre, og vær konsekvent i din tilgang. Brug positiv forstærkning, såsom ros, belønninger og legetøj, for at motivere din hyrdehund under træning.</p>  
+
+        <p>Da Aussie'er har en stærk trang til at arbejde og lære, er det vigtigt at tilbyde mentalt udfordrende aktiviteter, såsom lydighedsøvelser, agility eller hundesport, for at holde dem engagerede og tilfredse. Træningsseancer bør være korte og varierede for at undgå kedsomhed og frustration hos hunden. Vær tålmodig og konsekvent, da det kan tage tid at opnå ønskede resultater, især med en så intelligent race. Vær opmærksom på hyrdehundens følsomme natur og undgå hård korrektion, da dette kan føre til angst eller tilbagetrækning. Med den rette tilgang og engagement kan træning af den australske hyrdehund være en givende og berigende oplevelse for både hund og ejer.</p>
+
+        <img src="img/træning.png" alt="">
+
+    </div>
+    <div class="billede3">
+        <!--Tom div til billede som indsættes i scss-->
+    </div>
+</section>
+
+<section class="txt-img-section">
+    <div class="tekst">
+        <h2><span style="color: #DF262E">Pleje</span></h2>
+
+        <p>Pleje af den australske hyrdehund kræver regelmæssig opmærksomhed for at sikre dens velbefindende og trivsel. Pelspleje er en vigtig del af denne proces, da Aussie's dobbelte pels kan blive meget tyk og kræve regelmæssig børstning for at undgå sammenfiltring og for at fjerne løse hår. Det anbefales at børste hyrdehunden mindst et par gange om ugen, og hyppigere under fældningsperioder for at mindske mængden af hår, der kastes. Brug en blød børste eller kam, der ikke irriterer hundens hud, og sørg for at være grundig, især omkring områder med tendens til sammenfiltring, såsom bag ørerne og ved halen.</p>  
+
+        <p>Ud over pelspleje er det vigtigt at huske på andre aspekter af hyrdehundens pleje, herunder regelmæssige øretjek for at forhindre infektioner, trimning af negle for at undgå overvækst, og tandbørstning for at opretholde god mundhygiejne. Giv også din hyrdehund tilstrækkelig motion og mental stimulation for at holde den sund og glad. Med den rette pleje og opmærksomhed kan den australske hyrdehund leve et opfyldt og aktivt liv.</p>
+
+        <img src="img/pleje.png" alt="">
+
+    </div>
+    <div class="billede4">
+        <!--Tom div til billede som indsættes i scss-->
+    </div>
 </section>
 
 </main>
 
 
+<footer>
 
+
+</footer>
 
 </body>
 </html>
